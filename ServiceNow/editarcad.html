@@ -1,0 +1,181 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container">
+<form action="cad.html">
+<br>
+<div class="row">
+<div class="col-sm-offset-4">
+<h1>Edição de cadastro</h1>
+<h5>Joana da Silva Menezes Prado Varella</h5>
+</div>
+
+  <br>
+	<div class="row">
+    <h4>Pessoal</h4>
+	<div class="col-sm-4">
+	<label>*Nome</label>
+ <input type="text" class="form-control" id="nome" required>
+ </div>
+
+ <div class="col-sm-4 offset-sm-8">
+	<label>*Sobre Nome</label>
+ <input type="text" class="form-control" id="snome" required>
+ </div>
+
+<div class="col-sm-4 offset-sm-8">
+ <label>*Sexo</label>
+ <select class="form-control" required>
+ 	<option>Feminino</option>
+ 	<option>Masculino</option>
+ </select>
+ </div>
+</div>
+
+<div class="row">
+ <div class="col-sm-6">
+	<label>Email</label>
+ <input type="Email" class="form-control" id="mail" >
+ </div>
+
+ <div class="col-sm-3">
+	<label>Senha</label>
+ <input type="password" class="form-control" id="senha">
+ </div>
+
+ <div class="col-sm-3">
+	<label>Confirme a Senha</label>
+ <input type="password" class="form-control" id="csenha">
+ </div>
+ </div>
+
+<div class="row">
+ <div class="col-sm-3">
+	<label>*R.G.</label>
+ <input type="text" class="form-control" id="rg"  disabled>
+ Após confirmação, não será possivel editar Cpf e Rg. Caso precise alterar, entrar em <a>contato</a> com a empresa.
+ </div>
+
+ <div class="col-sm-3">
+	<label>*C.P.F.</label>
+
+ <input type="text" class="form-control" id="cpf" disabled>
+ </div>
+
+  <div class="col-md-3">
+	<label>*Telefone 1</label>
+ <input type="text" class="form-control" id="t1" required>
+ </div>
+
+  <div class="col-md-3">
+	<label>Telefone 2</label>
+ <input type="text" class="form-control" id="t2" required>
+ </div>
+ </div>
+
+<br>
+<hr>
+ <div class="row">
+   <h4>Endereço</h4>
+ <div class="col-sm-12">
+   <label>Endereço</label>
+   <input id="text" class="form-control" id="end" value="Avenida Teste" required>
+ </div>
+
+ <div class=" col-sm-12">
+   <label>Bairro</label>
+   <input type="text" class="form-control" id="rua" value="Carmelo" required>
+ </div>
+
+ <div class="col-sm-3">
+   <label>Numero</label>
+   <input type="text" class="form-control" id="num" value="360" required>
+ </div>
+
+ <div class="col-sm-9">
+     <label>Complemento</label>
+     <input type="password" class="form-control" id="comp" required>
+   </div>
+</div>
+
+<br>
+<hr>
+<div class="row">
+  <h4>Infos. Bancária</h4>
+  <div class="col-sm-3">
+    <label>Banco</label>
+    <select class="form-control" id="banco"  required>
+
+        <option>Banco 01</option>
+        <option>Banco 02</option>
+        <option>Banco 03</option>
+        <option>Banco 04  </option>
+      </select>
+  </div>
+
+  <div class="col-sm-3">
+    <label>Conta</label>
+    <select class="form-control" id="conta" required>
+
+        <option>001 – Conta Corrente de Pessoa Física</option>
+        <option>002 – Conta Simples de Pessoa Física</option>
+        <option>013 – Poupança de Pessoa Física</option>
+        <option>022 – Poupança de Pessoa Jurídica </option>
+      </select>
+    </div>
+
+  <div class="col-sm-3">
+    <label >Numero Agência</label>
+    <input type="number" class="form-control" id="numage" value="5246645311" required>
+  </div>
+
+  <div class="col-sm-3">
+      <label>Nome Agência</label>
+      <input type="text" class="form-control" id="nomeage" value="Brasil" required>
+    </div>
+
+    <div class="col-sm-offset-4  col-sm-4">
+        <label>Numero Conta</label>
+        <input type="number " class="form-control" id="numconta" value="5578"required>
+    </div></div>
+
+<br><br><br>
+    <div class="col-sm-offset-5" style="paddin-bot">
+    <button type="submit" class="btn btn-primary btn-lg">Salvar Alterações!</button>
+    </div>
+
+</div>
+</form>
+</div>
+
+  <script>
+document.getElementById("nome").value = "Joana da Silva";
+document.getElementById("snome").value = "Menezes Prado Varella";
+document.getElementById("mail").value = "jmeneva@gmail.com";
+document.getElementById("senha").value = "senhasenhasenha";
+document.getElementById("csenha").value = "senhasenhasenha";
+document.getElementById("rg").value = "111.111-11";
+document.getElementById("cpf").value = "111.111.111-11";
+document.getElementById("t1").value = "(xx) 7777-7777)";
+document.getElementById("t2").value = "(xx) 9 7777-7777)";
+  </script>
+
+  <style>
+    hr {background-color:#F5F5F5; height: 2px;}
+  	label{font-size: 12px;}
+  </style>
+
+</body>

@@ -1,0 +1,257 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="jumbotron text-center" style="padding-bottom: 15px;padding-top: 0px; height: 250px;">
+    <img src="Imagens/logosombra.png" style="position: relative; height: 250px;  top: 13px;">
+  
+</div>
+
+<div class="col-sm-6 col-sm-offset-3 " style=" margin-top: 20px;">
+<form class="form-horizontal" action="cad.html" method="post">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email" style="padding-right: 0px;">Email:</label>
+    <div class="col-sm-8">
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd" style="padding-right: 0px;">Password:</label>
+    <div class="col-sm-8"> 
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
+    </div>
+  </div>
+
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox">Relembrar Informações</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group"> 
+    <div class="col-sm-offset-3 col-sm-9">
+     <button value="cadastro" type="submit" class="btn btn-success btn-block" style="width:300px;">Logar</button>
+      <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal"style="width:300px;">Cadastrar</button>
+    </div>
+  </div>
+</form>
+</div>
+
+<div class="footer" style="margin-top: 351px; text-align: center;">
+        <p >Service Now ®</p>
+      </div>
+</body>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Cadastre-se!</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+
+
+<!-- modal -->
+
+      <div class="modal-body">
+       <form id="formExemplo" data-toggle="validator" role="form">
+         
+          <div class="row">
+  <div class="col-sm-12">
+    <label for="textNome" class="control-label">Nome</label>
+    <input id="textNome" class="form-control"  type="text" required>
+  </div>
+
+  <div class="col-sm-12">
+    <label for="textNome" class="control-label">Sobrenome</label>
+    <input id="textNome" class="form-control"  type="text" required>
+  </div>
+
+  <div class="col-sm-12">
+      <label for="textNome" class="control-label">Email</label>
+      <input id="textNome" class="form-control"  type="email" required>
+    </div>
+
+    <div class="col-sm-12">
+        <label for="textNome" class="control-label">Senha</label>
+        <input id="textNome" class="form-control"  type="password" required>
+      </div>
+
+      <div class="col-sm-12">
+          <label for="textNome" class="control-label">Confirme a Senha</label>
+          <input id="textNome" class="form-control"  type="password" required>
+        </div>
+
+      <div class="col-sm-6">
+    <label for="textNome" class="control-label">C.P.F.</label>
+    <input id="textNome" class="form-control"  type="text" required>
+</div>
+
+    <div class="col-sm-6">
+    <label for="textNome" class="control-label">R.G.</label>
+    <input id="textNome" class="form-control" type="text" required>
+  </div>
+
+  <div class="col-sm-6">
+      <label for="textNome" class="control-label">Celular</label>
+      <input id="textNome" class="form-control"  type="text" required>
+  </div>
+  
+      <div class="col-sm-6">
+      <label for="textNome" class="control-label">Fixo</label>
+      <input id="textNome" class="form-control" type="text" required>
+    </div>
+
+    
+   <div class="col-sm-offset-3 col-sm-6">
+   <label>Foto</label>
+    <input type="file" class="custom-file-input" required>
+    </div>
+
+  <div class="col-sm-offset-3 col-sm-6">
+      <label>Sexo</label>
+      <select class="form-control" required>
+          <option>Feminino</option>
+          <option>Masculino</option>
+      </select>
+    </div>
+  </div>
+
+ <br><div class="row">
+  <div class="col-sm-offset-3 col-sm-6">
+    <label for="inputEmail" class="control-label">CEP</label>
+    <input id="inputEmail" class="form-control"  type="text" required>
+  </div>
+
+  <div class="col-sm-12">
+    <label for="inputEmail" class="control-label">Endereço</label>
+    <input id="inputEmail" class="form-control"  type="text" required>
+  </div>
+  
+  <div class=" col-sm-12">
+    <label for="inputPassword" class="control-label">Bairro</label>
+    <input type="text" class="form-control" id="inputPassword" required>
+  </div>
+  
+  <div class="col-sm-3">
+    <label for="inputConfirm" class="control-label">Numero</label>
+    <input type="number" class="form-control" id="inputConfirm" required>
+  </div>
+
+  <div class="col-sm-9">
+      <label for="inputConfirm" class="control-label">Complemento</label>
+      <input type="text" class="form-control" id="inputConfirm" required>
+    </div>
+
+    <div class="col-sm-6">
+      <label>Estado</label>
+      <select class="form-control" required>
+      <option selected="" value="">Selecione o Estado (UF)</option>
+<option value="Acre">Acre</option>
+<option value="Alagoas">Alagoas</option>
+<option value="Amapá">Amapá</option>
+<option value="Amazonas">Amazonas</option>
+<option value="Bahia">Bahia</option>
+<option value="Ceará">Ceará</option>
+<option value="Distrito Federal">Distrito Federal</option>
+<option value="Espírito Santo">Espírito Santo</option>
+<option value="Goiás">Goiás</option>
+<option value="Maranhão">Maranhão</option>
+<option value="Mato Grosso">Mato Grosso</option>
+<option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+<option value="Minas Gerais">Minas Gerais</option>
+<option value="Pará">Pará</option>
+<option value="Paraíba">Paraíba</option>
+<option value="Paraná">Paraná</option>
+<option value="Pernambuco">Pernambuco</option>
+<option value="Piauí">Piauí</option>
+<option value="Rio de Janeiro">Rio de Janeiro</option>
+<option value="Rio Grande do Sul">Rio Grande do Sul</option>
+<option value="Rio Grande do Norte">Rio Grande do Norte</option>
+<option value="Rondônia">Rondônia</option>
+<option value="Roraima">Roraima</option>
+<option value="Santa Catarina">Santa Catarina</option>
+<option value="São Paulo">São Paulo</option>
+<option value="Sergipe">Sergipe</option>
+<option value="Tocantins">Tocantins</option>
+      </select>
+      </div>
+       <div class="col-sm-6">
+    <label for="textNome" class="control-label">Cidade</label>
+    <input id="textNome" class="form-control" type="text" required>
+  </div>
+</div><br><br>
+
+
+<div class="row">
+    <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+      <label>Banco</label>
+      <select class="form-control" required>
+          <option>-Escolha um Banco-</option>
+          <option>Banco 01</option>
+          <option>Banco 02</option>
+          <option>Banco 03</option>
+          <option>Banco 04  </option>
+        </select>
+      </div>
+
+    <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+      <label>Conta</label>
+      <select class="form-control" required>
+          <option>-Escolha Conta-</option>
+          <option>001 – Conta Corrente de Pessoa Física</option>
+          <option>002 – Conta Simples de Pessoa Física</option>
+          <option>013 – Poupança de Pessoa Física</option>
+          <option>022 – Poupança de Pessoa Jurídica </option>
+        </select>
+      </div>
+    
+    <div class="col-sm-offset-3 col-sm-6">
+      <label for="inputConfirm" class="control-label">Numero Agência</label>
+      <input type="number" class="form-control" id="inputConfirm" required>
+    </div>
+  
+    <div class="col-sm-offset-3 col-sm-6">
+        <label for="inputConfirm" class="control-label">Nome Agência</label>
+        <input type="text" class="form-control" id="inputConfirm" required>
+      </div>
+
+      <div class="col-sm-offset-3 col-sm-6">
+          <label for="inputConfirm" class="control-label ">Numero Conta</label>
+          <input type="number " class="form-control" id="inputConfirm" required>
+      </div></div> <br><br>
+    <a href="contrato.pdf" style="margin-left: 15%">Ao me cadastrar estou de acordo com os termos e condições</a>
+  <div class="col-sm-offset-3 col-sm-3 col-sm-offset-3">
+  <button type="submit" class="btn btn-primary btn-lg" >Cadastrar</button>
+  </div>
+
+
+</form>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+
+    .modal-body{height: 1300px;}
+    body { background: #fff url(Imagens/Background.png)center; }
+</style>
+
+</html>
+
+

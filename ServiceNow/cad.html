@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Service Now</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <script type="text/javascript">
+            $(function(){ 
+            var cor = "panel panel-success";  
+            var animacao = "animated flip";
+            var fimanimacao = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+            $(".btn1").click(function(e){ 
+
+            $(this).parent().children(":first").html("Em execução");
+            $(this).parent().addClass(cor);
+            $(this).parent().addClass(animacao).one(fimanimacao, function(){
+            $(this).parent().removeClass(animacao);
+            });
+            e.preventDefault();
+            });
+
+            });
+  	
+            function validarcadprod(){
+            $("#avisopadrao").animate({top: '10px'});
+            $("#avisopadrao").show();
+            $("#avisomaxima").hide();
+            $("#avisomaxima").animate({top: '-20px'});
+            $("#avisomedia").hide();
+            $("#avisomedia").animate({top: '-20px'});
+             $("#avisoalta").hide();
+            $("#avisoalta").animate({top: '-20px'});
+             $("#avisonenhumao").hide();
+            $("#avisonenhuma").animate({top: '-20px'});
+            }
+            function valcadprod(){
+            var titulo = fcadprod.titulo.value;
+            var produto = fcadprod.produto.value;
+            var valor =  fcadprod.vlProduto.value;
+            
+            if(titulo ==""){
+               $("#errop").animate({top: '20px'});
+            $("#errop").show();
+           
+              fcadprod.titulo.focus();
+              return false;
+            }
+            if(produto ==""){
+               $("#errop").animate({top: '20px'});
+            $("#errop").show();
+           
+              fcadprod.produto.focus();
+              return false;
+            }
+            if(valor ==""){
+               $("#errop").animate({top: '20px'});
+            $("#errop").show();
+              fcadprod.vlProduto.focus();
+              return false;
+            }
+            else{
+              $("#sucessop").animate({top: '10px'});
+            $("#sucessop").show();
+            $("#errop").hide();
+            $("#errop").animate({top: '-20px'});
+            }
+          }
+        function ValidarSaque(){
+            var valor = fsaque.vlSaque.value; 
+            if(valor ==""){
+               $("#erros").animate({top: '20px'});
+            $("#erros").show();
+           
+              fsaque.vlSaque.focus();
+              return false;
+            } 
+            else{
+              $("#saques").animate({top: '10px'});
+            $("#saques").show();
+            $("#erros").hide();
+            $("#erros").animate({top: '-20px'});
+            }
+          }
+
+           $(document).ready(function(){
+            $("#bfinan").click(function(){
+            $("#tsaque").animate({top: '10px'});
+            $("#tsaque").show();   
+            $("#log").hide();
+            $("#log").animate({top: '-20px'});
+            $("#cad").hide();
+            $("#cad").animate({top: '-20px'});
+            $("#mserv").hide();
+            $("#mserv").animate({top: '-20px'});
+            $("#contrat").hide();
+            $("#contrat").animate({top: '-20px'});
+             $("#prod").hide();
+            $("#prod").animate({top: '-20px'});
+            });
+            });
+
+            $(document).ready(function(){
+            $("#bprod").click(function(){
+            $("#prod").animate({top: '10px'});
+            $("#prod").show();   
+            $("#log").hide();
+            $("#log").animate({top: '-20px'});
+            $("#cad").hide();
+            $("#cad").animate({top: '-20px'});
+            $("#mserv").hide();
+            $("#mserv").animate({top: '-20px'});
+            $("#contrat").hide();
+            $("#contrat").animate({top: '-20px'});
+             $("#tsaque").hide();
+            $("#tsaque").animate({top: '-20px'});
+            });
+            });
+            $(document).ready(function(){
+            $("#bserv").click(function(){
+            $("#mserv").animate({top: '10px'});
+            $("#mserv").show();   
+            $("#log").hide();
+            $("#log").animate({top: '-20px'});
+            $("#cad").hide();
+            $("#cad").animate({top: '-20px'});
+            $("#prod").hide();
+            $("#prod").animate({top: '-20px'});
+            $("#contrat").hide();
+            $("#contrat").animate({top: '-20px'});
+             $("#tsaque").hide();
+            $("#tsaque").animate({top: '-20px'});
+            });
+            });
+
+             $(document).ready(function(){
+            $("#bcont").click(function(){
+            $("#contrat").animate({top: '10px'});
+            $("#contrat").show(); 
+            $("#contprod").animate({top: '10px'});
+            $("#contprod").show();    
+            $("#log").hide();
+            $("#log").animate({top: '-20px'});
+            $("#cad").hide();
+            $("#cad").animate({top: '-20px'});
+            $("#prod").hide();
+            $("#prod").animate({top: '-20px'});
+            $("#mserv").hide();
+            $("#mserv").animate({top: '-20px'});
+            $("#opcoluna").hide();
+            $("#opcoluna").animate({top: '-20px'});
+             $("#tsaque").hide();
+            $("#tsaque").animate({top: '-20px'});
+            });
+            });
+            
+            $(document).ready(function(){
+            $("#bvoltarc").click(function(){
+            $("#opcoluna").animate({top: '10px'});
+            $("#opcoluna").show();   
+            $("#opcasa").hide();
+            $("#opcasa").animate({top: '-20px'});
+            $("#oplimpeza").hide();
+            $("#oplimpeza").animate({top: '-20px'});
+            $("#opjardim").hide();
+            $("#opjardim").animate({top: '-20px'});
+            $("#contrat").hide();
+            $("#contrat").animate({top: '-20px'});
+            $("#opurgencia").hide();
+            $("#opurgencia").animate({top: '-20px'});
+            $("#contprod").hide();
+            $("#contprod").animate({top: '-20px'});
+            $("#tsaque").hide();
+            $("#tsaque").animate({top: '-20px'});
+            });
+            });
+            function avisoselect(fcadprod){
+               var sel = fcadprod.optionList.value;
+              if(sel == "2"){
+              
+            $("#avisomaxima").show();
+            $("#avisopadrao").hide();
+            $("#avisomedia").hide();
+             $("#avisoalta").hide();
+             $("#avisonenhumao").hide();
+            }
+            if(sel == "1"){
+              
+            $("#avisopadrao").show();
+            $("#avisomaxima").hide();
+            $("#avisomedia").hide();
+             $("#avisoalta").hide();
+             $("#avisonenhuma").hide();
+            }
+            if(sel == "3"){
+              
+            $("#avisomedia").show();
+            $("#avisomaxima").hide();
+            $("#avisopadrao").hide();
+             $("#avisoalta").hide();
+             $("#avisonenhuma").hide();
+            }
+             if(sel == "4"){
+              
+            $("#avisoalta").animate({top: '10px'});
+            $("#avisoalta").show();
+            $("#avisomaxima").hide();
+            $("#avisopadrao").hide();
+             $("#avisomedia").hide();
+             $("#avisonenhuma").hide();
+            }
+            if(sel == "5"){
+              
+            $("#avisonenhuma").animate({top: '10px'});
+            $("#avisonenhuma").show();
+            $("#avisomaxima").hide();            
+            $("#avisopadrao").hide();
+             $("#avisomedia").hide();
+             $("#avisoalta").hide();
+            }
+          }
+          function endselect(fcadprod){
+               var sel = fcadprod.optionEnd.value;
+              if(sel == "2"){
+              
+            $("#newend").show();
+            }
+            if(sel == "1"){
+              
+            $("#exend").show();
+            $("#newend").hide();
+            }
+          }
+           function contselect(fsaque){
+               var sel = fsaque.optionConta.value;
+              if(sel == "2"){
+            $("#tnew").show();
+            }
+            if(sel == "1"){
+              
+            $("#tsaque").show();
+            $("#tnew").hide();
+            }
+          }
+          function opprod(fopprod){
+               var sel = fopprod.optionProd1.value;
+              if(sel == "1"){
+              
+            $("#contrat").show();
+            $("#opcasa").hide();         
+            $("#opjardim").hide();          
+            $("#oplimpeza").hide();
+            $("#opurgencia").hide();
+            }
+            if(sel == "2"){
+              
+            $("#opcasa").show();
+            $("#contrat").hide();         
+            $("#opjardim").hide();          
+            $("#oplimpeza").hide();
+            $("#opurgencia").hide();
+            }
+            if(sel == "3"){
+              
+            $("#opjardim").show();
+            $("#opcasa").hide();         
+            $("#contrat").hide();          
+            $("#oplimpeza").hide();
+            $("#opurgencia").hide();
+            }
+            if(sel == "4"){
+              
+            $("#oplimpeza").show();
+            $("#opcasa").hide();         
+            $("#opjardim").hide();          
+            $("#contrat").hide();
+            $("#opurgencia").hide();
+            }
+            if(sel == "5"){
+              
+            $("#opurgencia").show();
+            $("#opcasa").hide();         
+            $("#opjardim").hide();          
+            $("#oplimpeza").hide();
+            $("#contrat").hide();
+            }
+            
+          }
+            $(document).ready(function(){
+            $("#omaxima").click(function(){
+            $("#avisomaxima").animate({top: '10px'});
+            $("#avisomaxima").show();
+            $("#avisopadrao").hide();
+            $("#avisopadrao").animate({top: '-20px'});
+            $("#avisomedia").hide();
+            $("#avisomedia").animate({top: '-20px'});
+             $("#avisoalta").hide();
+            $("#avisoalta").animate({top: '-20px'});
+             $("#avisonenhumao").hide();
+            $("#avisonenhuma").animate({top: '-20px'});
+            });
+            });
+
+        
+  </script>
+
+  <style>
+  #fcadastro {
+    padding-left: 2%; 
+  }
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    .col-sm-9{
+    	background-color: white;
+    }
+    .container-fluid{
+    	background-color: white;
+    }
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+      #coluna{
+        background-color: #337ab7 
+      }
+      #blogin{
+        background-color: white;
+      }
+      #bcadastro{
+        background-color: white;
+      }
+      #bprod{
+        background-color: white;
+      }
+      #bprod:hover{
+      transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+    #bserv{
+        background-color: white;
+      }
+      #bserv:hover{
+      transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+    #blogin:hover{
+      transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+    #bcadastro:hover{
+      transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+    #bcont{
+       background-color: white;
+    }
+    #bcont:hover{
+       transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+    #btodos{
+       background-color: white;
+    }
+    #btodos:hover{
+       transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+     #bjardim{
+       background-color: white;
+    }
+    #bjardim:hover{
+       transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+     #blimpeza{
+       background-color: white;
+    }
+    #blimpeza:hover{
+       transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+     #bcasa{
+       background-color: white;
+    }
+    #bcasa:hover{
+       transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+     #burgencia{
+       background-color: white;
+    }
+    #burgencia:hover{
+       transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+    #bfinan{
+       background-color: white;
+    }
+    #bfinan:hover{
+       transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+    #bvoltarc{
+      background-color: white;
+    }
+    #bvoltarc:hover{
+      transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+    #bedcad{
+      background-color: white;
+    }
+    #edcad:hover{
+transition-duration: 1s;
+      color:white ;
+      background-color:#1E90FF;
+    }
+   
+  </style>
+</head>
+<body>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Service Now</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-sm-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+              <button type="button" class="btn1 btn-success btn-x">Contratar</button>
+        <div class="panel-footer">Limpeza de carro<br> Valor R$ 50,00  </div>
+      </div>
+    </div> 
+      </div>
+      <!--- ///// -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav" id="coluna">
+     <img src="Imagens/cold.jpg" class="img-circle img-responsive" alt="Cinque Terre">
+      <ul class="nav nav-pills nav-stacked" style="margin-top: 2%" id="opcoluna">
+        <li><a id="bprod">Anunciar</a></li>
+        <li><a id="bcont">Contratar</a></li>
+        <li><a id="bserv">Meus servicos</a></li>
+        <li><a id="bfinan">Financeiro</a></li>
+        <li><a href="editarcad.html" id="bedcad">Editar Cadastro</a></li>
+      </ul>
+        <div class="dropdown" id="contprod" style="display: none; margin-top: 2%">
+          <ul class="nav nav-pills nav-stacked" style="margin-top: 2%" id="contprod">
+    <li><a id="bvoltarc">Voltar</a></li>
+  </ul>
+  <form class="form-horizontal" id="fopprod">
+  <select class="form-control" onchange="opprod(this.form)" name="optionProd1" style="margin-top: 1%">
+    <option id="btodos" value="1">Todos</option>
+    <option id="bjardim" value="2">Jardinagem</option>
+    <option id="blimpeza" value="3">Limpeza</option>
+    <option id="bcasa" value="4">Casa</option>
+    <option id="burgencia" value="5">Urgencia</option>
+  </select>
+  </form>
+</div>     
+    </div>
+     <div class="col-sm-9" id=prod style="display: none;">
+    <div class="alert alert-warning alert-dismissible" id="avisopadrao" style="display: none;">
+  <strong>Aviso!</strong> Esta prioridade resulta em uma taxa de 15% no valor do anuncio.
+  <button class="close" data-dismiss="alert">&times;</button>
+</div>
+<div class="alert alert-warning alert-dismissible" id="avisomaxima" style="display: none;">
+  <strong>Aviso!</strong> Esta prioridade resulta em uma taxa de 25% no valor do anuncio.
+  <button class="close" data-dismiss="alert">&times;</button>
+</div>
+<div class="alert alert-warning alert-dismissible" id="avisomedia" style="display: none;">
+  <strong>Aviso!</strong> Esta prioridade resulta em uma taxa de 18% no valor do anuncio.
+  <button class="close" data-dismiss="alert">&times;</button>
+</div>
+<div class="alert alert-warning alert-dismissible" id="avisoalta" style="display: none;">
+  <strong>Aviso!</strong> Esta prioridade resulta em uma taxa de 22% no valor do anuncio.
+  <button class="close" data-dismiss="alert">&times;</button>
+</div>
+<div class="alert alert-warning alert-dismissible" id="avisonenhuma" style="display: none;">
+  <strong>Aviso!</strong> Esta prioridade resulta em uma taxa de 10% no valor do anuncio.
+  <button class="close" data-dismiss="alert">&times;</button>
+</div>
+ <div class="alert alert-success alert-dismissible" id="sucesso" style="display: none;">
+  <strong>Sucesso!</strong> Produto cadastrado com sucesso.
+  <button class="close" data-dismiss="alert">&times;</button>
+</div>
+ <div class="alert alert-danger alert-dismissible" id="errop" style="display: none;">
+  <strong>Erro!</strong> Preencha o campo corretamente.
+  <button class="close" data-dismiss="alert">&times;</button>
+</div>
+<div class="alert alert-success alert-dismissible" id="sucessop" style="display: none;">
+  <strong>Sucesso!</strong> Produto cadastrado com sucesso.
+  <button class="close" data-dismiss="alert">&times;</button>
+</div>
+
+<form class="form-horizontal" id="fcadprod">
+<fieldset>
+
+<!-- Form Name -->
+
+<legend>Cadastro de Produto</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtcodigo_produto_id" >Titulo : </label>  
+  <div class="col-md-4">
+  <input id="titulo" name="txtcodigo_produto_id" type="text" placeholder="" class="form-control input-md" required="required">
+    
+  </div>
+ 
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtproduto">Produto : </label>  
+  <div class="col-md-6">
+  <input id="produto" name="txtproduto" type="text" placeholder="Descrição do Produto" class="form-control input-md" required="required">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtgrupo">Tipo : </label>
+  <div class="col-md-4">
+    <select id="txtgrupo" name="txtgrupo" class="form-control">
+      <option value="1">Higiêne</option>
+      <option value="2">Jardinagem</option>
+      <option value="3">Limpesa</option>
+      <option value="4">Outros</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+  <div class="form-group">
+  <label class="col-md-4 control-label" for="txtcodigo_unidade_id">Tags : </label>
+ <div class="col-md-4">
+  <input id="titulo" name="txtcodigo_produto_id" type="text" placeholder="Ex: Banheiro, Limpeza, Higiêne" class="form-control input-md" required="required">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtestoque_minimo">Urgencia : </label>  
+  <div class="col-md-2">
+   <select id="select1" name="optionList" class="form-control" onchange="avisoselect(this.form)">
+      <option  id="opadrao" value="1">Padrão</option>
+      <option id="omaxima" value="2">Maxima</option>
+      <option  id="omedia" value="3">Media</option>
+      <option  id="oalta" value="4">Alta</option>
+       <option  id="onenhuma" value="5">Nenhuma</option>
+    </select>
+    
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtestoque_minimo">Endereço : </label>  
+  <div class="col-md-2">
+   <select id="select1" name="optionEnd" class="form-control" onchange="endselect(this.form)">
+      <option  id="ex" value="1">Existente</option>
+      <option id="new" value="2">Novo</option>
+    </select>
+    
+  </div>
+</div>
+<div class="form-group" id="newend" style="display: none">
+  <div class="form-group">
+  <label class="col-md-4 control-label" for="txtcodigo_unidade_id">Rua : </label>
+ <div class="col-md-4">
+  <input id="rua" name="txtcodigo_produto_id" type="text" placeholder="Rua" class="form-control input-md" required="required"> 
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtcodigo_unidade_id">CEP : </label>
+ <div class="col-md-4">
+  <input id="cep" name="txtcodigo_produto_id" type="number" placeholder="CEP" class="form-control input-md" required="required"> 
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtcodigo_unidade_id">Bairro : </label>
+ <div class="col-md-4">
+  <input id="bairro" name="txtcodigo_produto_id" type="text" placeholder="Bairro" class="form-control input-md" required="required"> 
+  </div>
+</div>
+</div>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="inlineFormInput">Valor : </label>  
+  <div class="col-md-2">
+   <input type="text" class="form-control input-md" id="vlProduto" placeholder="Valor (R$)" style="width:98px" required="required">                       
+                         
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="btnsalvar"></label>
+  <div class="col-md-8">
+    <button id="btnsalvar" name="btnsalvar" class="btn btn-primary" onclick="valcadprod()" href="#">Salvar</button>
+    <button id="btncancelar" name="btncancelar" class="btn btn-danger">Cancelar</button>
+  </div>
+
+</div>
+</div>
+</fieldset>
+</form>
+<div class="col-sm-9" id=mserv style="display: none;">
+  <div class="form-group">
+    <h4><small>MEUS SERVIÇOS</small></h4>
+      <hr>
+      <h2>Limpeza de Banheiro</h2> 
+      <div class="form-group"> 
+  <label class="col-md-3 control-label" for="txtestoque_minimo">Valor Recebido: R$ 150,00 </label><br>
+</div>
+<div class="form-group"> 
+<label class="col-md-2 control-label" for="txtestoque_minimo">Status :</label>
+  </div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+  aria-valuemin="0" aria-valuemax="100" style="width:100%">
+    Avaliação <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span>(Concluido)
+  </div>
+</div>
+<h2>Jardinagem</h2> 
+      <div class="form-group"> 
+  <label class="col-md-3 control-label" for="txtestoque_minimo">Valor Recebido: R$ 80,00 </label><br>
+</div>
+<div class="form-group"> 
+<label class="col-md-2 control-label" for="txtestoque_minimo">Status :</label>
+  </div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+  aria-valuemin="0" aria-valuemax="100" style="width:60%">
+    Avaliação <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> (Concluido)
+  </div>
+</div>
+<h2>Limpiza de casa</h2> 
+      <div class="form-group"> 
+  <label class="col-md-3 control-label" for="txtestoque_minimo">Valor Recebido: R$ 112,90 </label><br>
+</div>
+<div class="form-group"> 
+<label class="col-md-2 control-label" for="txtestoque_minimo">Status :</label>
+  </div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60"
+  aria-valuemin="0" aria-valuemax="100" style="width:25%">
+    Avaliação <span class="glyphicon glyphicon-star"></span> (Concluido)
+  </div>
+</div>
+<h2>Reputação</h2> 
+<div class="form-group"> 
+<label class="col-md-2 control-label" for="txtestoque_minimo">Sua Reputação :</label>
+  </div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60"
+  aria-valuemin="0" aria-valuemax="100" style="width:50%">
+     <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> (Precisa Melhorar)
+  </div>
+</div>
+<div class="form-horizontal">
+  <br>
+  <hr>
+<h2>Jardinagem</h2> 
+        <div class="col-md-8">
+        <label class="col-md-3 control-label" for="txtestoque_minimo">Valor : R$ 100,90 </label>
+      </div><br>
+      <div class="col-md-8">
+        <label class="col-md-3 control-label" for="txtestoque_minimo">Status: Contratado </label>
+      </div><br>
+        <div class="form-group">
+      <div class="col-md-8">
+    <button id="btncs" name="btnsaquar" class="btn btn-danger" style="margin-left: 8%">Cancelar Serviço</button>
+  </div><br>
+  </div>
+
+      <h2>Banheiro</h2> 
+      <div class="col-md-8">
+        <label class="col-md-3 control-label" for="txtestoque_minimo">Valor : R$ 70,90 </label>
+      </div>
+      <div class="col-md-8">
+        <label class="col-md-3 control-label" for="txtestoque_minimo">Status : Anunciado </label>
+      </div>
+      <div class="form-group">
+      <div class="col-md-8">
+    <button id="btnca" name="btnsaquar" class="btn btn-danger" style="margin-left: 8%">Cancelar Anuncio</button>
+  </div>
+  </div>
+</div>
+<hr>
+</div>
+</div>
+   <div class="col-sm-7" id="contrat" style="display: none; margin-left: 10%;" >  
+         <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+              <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Saiba Mais</button>
+        <div class="panel-footer">Limpeza de carro<br> Valor R$ 50,00  </div>
+      </div>
+    </div>
+       <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+              <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Saiba Mais</button>
+        <div class="panel-footer">Limpeza de carro<br> Valor R$ 50,00  </div>
+      </div>
+    </div>
+       <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+              <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Saiba Mais</button>
+        <div class="panel-footer">Limpeza de carro<br> Valor R$ 50,00  </div>
+      </div>
+    </div>
+</div>
+<div class="col-sm-7" style="display: none; margin-left: 10%;" id="opcasa">  
+        <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+              <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Saiba Mais</button>
+        <div class="panel-footer">Limpeza de carro<br> Valor R$ 50,00  </div>
+      </div>
+    </div>
+      </div>
+      <div class="col-sm-7" style="display: none; margin-left: 10%;" id="opjardim">  
+         <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+              <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Saiba Mais</button>
+        <div class="panel-footer">Limpeza de carro<br> Valor R$ 50,00  </div>
+      </div>
+    </div>
+    </div>
+       
+      <div class="col-sm-7" style="display: none; margin-left: 10%;" id="oplimpeza">
+      <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+              <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Saiba Mais</button>
+        <div class="panel-footer">Limpeza de carro<br> Valor R$ 50,00  </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+              <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Saiba Mais</button>
+        <div class="panel-footer">Limpeza de carro<br> Valor R$ 50,00  </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+              <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Saiba Mais</button>
+        <div class="panel-footer">Limpeza de carro<br> Valor R$ 50,00  </div>
+      </div>
+    </div>
+  </div>
+       <div class="col-sm-7" style="display: none; margin-left: 10%;" id="opurgencia">  
+         <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+              <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Saiba Mais</button>
+        <div class="panel-footer">Limpeza de carro<br> Valor R$ 50,00  </div>
+      </div>
+    </div>
+      </div>
+    <div class="col-sm-8" id="tsaque" style="display: none" >
+  <div class="alert alert-success alert-dismissible" id="saques" style="display: none;">
+  <strong>Sucesso!</strong> Solicitação de saque foi recebida, o valor será depositado dentro de 2 dias úteis.
+  <button class="close" data-dismiss="alert">&times;</button>
+</div>
+<div class="alert alert-danger alert-dismissible" id="erros" style="display: none;">
+  <strong>Erro!</strong> Preencha o campo corretamente.
+  <button class="close" data-dismiss="alert">&times;</button>
+</div>
+  <div class="form-group">
+  <h4><small>SAQUE</small></h4>
+      <hr>
+      <label>Saldo disponivel : R$350,00</label><br>
+      <label>Saldo Mes Anterior : R$150,00</label><br>
+      <label>Ultimo Saque : 27/05/2018</label><br>
+      <hr>
+  <form class="form-horizontal" id="fsaque">
+  <div class="form-group">
+  <label class="col-md-4 control-label" for="txtestoque_minimo">Conta : </label>  
+  <div class="col-md-4">
+   <select id="select3" name="optionConta" class="form-control" onchange="contselect(this.form)">
+      <option  id="exc" value="1">Existente</option>
+      <option id="newc" value="2">Nova</option>
+    </select> 
+  </div>
+</div>
+<div class="form-group" id="tnew" style="display: none">
+  <div class="form-group">
+  <label class="col-md-4 control-label" for="txtestoque_minimo">Banco : </label>  
+  <div class="col-md-4">
+   <select id="select1" name="optionBanco" class="form-control">
+      <option  id="ex" value="1">Banco do Brasil</option>
+      <option id="new" value="2">Bradesco</option>
+      <option id="new" value="3">Nubank</option>
+    </select>
+  </div>
+  </div>
+  <div class="form-group">
+  <label class="col-md-4 control-label" for="txtcodigo_unidade_id">Agência : </label>
+ <div class="col-md-4">
+  <input id="agencia" name="txtcodigo_produto_id" type="number" placeholder="Agência" class="form-control input-md"> 
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtcodigo_unidade_id">Conta : </label>
+ <div class="col-md-4">
+  <input id="conta" name="txtcodigo_produto_id" type="number" placeholder="Conta" class="form-control input-md"> 
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtcodigo_unidade_id">CPF : </label>
+ <div class="col-md-4">
+  <input id="cpf" name="txtcodigo_produto_id" type="text" placeholder="CPF" class="form-control input-md"> 
+  </div>
+</div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="inlineFormInput">Valor : </label>  
+  <div class="col-md-2">
+   <input type="number" class="form-control input-md" id="vlSaque" placeholder="Valor (R$)" style="width:98px" required="required">                       
+      </div>                   
+  </div>
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="btnsalvar"></label>
+  <div class="col-md-8">
+    <button id="btnsaquar" name="btnsalvar" class="btn btn-primary" onclick="ValidarSaque()" href="#">Saquar</button>
+  </div>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>

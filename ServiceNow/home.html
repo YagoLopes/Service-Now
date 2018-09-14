@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Service Now</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link  rel = " stylesheet " href = " https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css ">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .col-sm-8 text-center{
+    background-color: blue !important;
+  }
+   hr{height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;}
+  
+  .fakeimg {
+      height: 200px;
+      background: #aaa;
+  }
+
+  body {
+      position: relative;
+      background: #FFF url(Imagens/Background.png) top center;
+  }
+  .affix {
+      top: 20px;
+      z-index: 9999 !important;
+  }
+  div.col-sm-9 div {
+      height: 250px;
+      font-size: 28px;
+  }  
+  .fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+<div class="jumbotron text-center" style="margin-bottom:0">
+ <img src="Imagens/logosombra.png">
+  <p>Gerenciando soluções</p> 
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" data-toggle="modal" data-target="#exampleModal">ServiceNow</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="untitled.html">Home</a></li>
+      <li><a href="cadastro.html">Login</a></li>
+    </ul>
+  </div>
+</nav>
+  <!-- modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Service Now</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    
+      <div class="modal-body">
+        <h2>Contrato do Cliente:</h2>
+<p>A tradução a seguir é fornecida para sua conveniência, apenas, Se houver
+quaisquer discrepâncias ou disposições conflitantes entre essa versão traduzida
+e a versão em Português (incluindo, mas não limitado a, atrasos na tradução), a
+versão em Português deverá prevalecer.<br>
+O presente Contrato do Cliente Service Now(este “Contrato”) contém os
+termos e as condições que regem seu acesso e uso das Ofertas e Contratações
+de Serviços, sendo firmado entre a Service Now e você ou a sociedade que
+você representa.<br>
+O presente Contrato entrará em vigor assim que você clicar no botão ou
+caixa de seleção “Eu Aceito” apresentado com esses termos ou, se
+anteriormente, quando você utilizar quaisquer das Ofertas de Serviço.
+Você declara estar legalmente apto a celebrar contratos (e.g., você não é menor
+de idade). Se estiver celebrando o presente Contrato em nome de uma entidade,
+tal como a empresa para quem trabalha, você declara ter autoridade legal para
+estar vinculado a ela. Favor consultar a Cláusula 14 para definição de
+determinados termos em letras maiúsculas utilizados neste Contrato.
+<h2>Uso das Ofertas de Serviço:</h2><br>
+<b>1.1 Em geral.</b> Você pode acessar e utilizar as Ofertas de Serviço de acordo com
+este Contrato. Contratos de Nível de Serviço e Termos de Serviços serão
+aplicáveis a certas Ofertas de Serviço. Você deve cumprir com os termos deste
+Contrato e com todas as leis, regras e regulamentos aplicáveis ao uso das
+Ofertas de Serviço.<br>
+<b>1.2 Sua Conta.</b> Para acessar os Serviços, você deverá ter uma conta na Service
+Now associada a um endereço de e-mail válido e um meio de pagamento válido. Salvo se explicitamente permitido pelos Termos de Serviço, você
+somente irá criar uma conta por endereço de e-mail.<br>
+<b>1.3 Conteúdo de Terceiros.</b> O Conteúdo de Terceiros poderá ser utilizado por
+você a seu critério. O Conteúdo de Terceiros é regido por este Contrato e, se
+aplicável, por termos e condições em separado que acompanham tal Conteúdo
+de Terceiros, sendo que tais termos e condições poderão incluir taxas e
+cobranças separadas.<br>
+<h2>Alterações</h2>
+<b>2.1 Das Ofertas e Contratações de Serviços.</b> Nós poderemos alterar ou
+encerrar todas ou quaisquer Ofertas e Contratações de Serviços, ou alterar ou
+remover funcionalidades de todas ou quaisquer Ofertas e Contratações de
+Serviços periodicamente. Nós o notificaremos de qualquer mudança substancial
+ou encerramento das Ofertas e Contratações de Serviços.<br>
+<b>2.2 Dos APIs.</b> Poderemos alterar ou encerrar quaisquer APIs dos Serviços
+periodicamente. Para qualquer interrupção ou alteração material a um API para
+um Serviço, nós empreenderemos esforços comerciais razoáveis para continuar
+a dar suporte à versão anterior tal API por 12 meses após a alteração ou
+interrupção (salvo se assim procedendo (a) resulte em um problema de
+segurança ou propriedade intelectual; (b) haja onerosidade econômica ou
+técnica, ou (c) resulte em alguma violação de leis ou solicitações de entidades
+governamentais).<br>
+<b>2.3 Dos Contratos de Nível de Serviço.</b> Poderemos alterar, encerrar ou
+adicionar Contratos de Nível de Serviço periodicamente de acordo com a
+Cláusula 12. <br><h2>Segurança e Privacidade de Dados</h2>
+Quando o Service Now solicita informações pessoais a você, essas
+informações estarão sendo enviadas somente a site dos administrados pelas
+Organizações da mesma. O Service Now poderá solicitar informações
+financeiras e/ou pessoais suas. Essas informações estarão sendo enviadas à
+ServiceNow.com, e, sendo assim, a mesma não terá qualquer responsabilidade
+pela utilização e manejo dessa informação, não sendo aplicada a presente
+política.<br>
+O ServiceNow.com destaca que o site pode existir links e/ou páginas que
+utilizem publicidade gráfica de outros parceiros e/ou empresas, como por
+exemplo, o Google Ads, que utiliza relatório de informações demográficas da
+respectiva plataforma de publicidade. Caso você tenha interesse em desativar tal
+publicidade gráfica, deverá acessar o link configurações de anúncios (
+https://www.google.com/settings/ads ) e personalizar sua própria experiência.
+As promoções realizadas no ServiceNow.com podem ser patrocinadas por
+outras empresas ou segundo uma parceria entre o ServiceNow.com e uma
+dessas empresas. Alguns dados coletados durante uma o cadastro pessoal pode
+ser compartilhado na tela principal como melhores prestadores de serviços,
+conforme sua reputação. Se os dados forem compartilhados, você será
+notificado antes da coleta dos dados. Assim, poderá decidir não participar da
+promoção se não desejar que seus dados sejam compartilhados
+O ServiceNow não comercializa informações de usuários para ninguém.
+Na ocasião da coleta ou transferência dos dados, nós o notificaremos, caso as
+informações a seu respeito sejam compartilhadas. Além disso, você sempre terá
+a opção de não permitir a transferência desses dados. Se não desejar que elessejam compartilhados, você poderá optar por não usar um determinado serviço<br>
+ou não participar de certas promoções ou concursos.
+Taxas e pagamentos: O Service Now trabalha com taxas cobradas através de
+cada anúncio cadastrado no site, cobrando taxas através de prioridades como:
+Úrgência, Maxima, Padrão. etc. Cada taxa varia da escolha que o cliente
+estiver disposto a pagar.<br>
+No caso de cancelamento de anúncio, o Service Now ira cobrar uma taxa
+de 5% do valor atual do anúncio, assim devolvendo o restante do dinheiro do
+anúncio que será retornado para seu perfil assim podendo solicitar o saque. O
+Service Now nao cobrará taxa por saques, podendo aplicar até dois saques
+diarios com um prazo de até 2 dias úteis.<br>
+<h2>Suas Responsabilidades</h2><br>
+O Service Now será apenas um Intermediador entre contratante e
+contratado, é de suma importancia que o Service Now não se responsabilizará
+por danos ocorrido, é responsabilidade do usuário tenha em mente que está em
+contato com pessoas desconhecidas, por isso, seja bem claro na avaliação, e
+certifique que a pessoa que ira fazer seu serviço tenha uma boa reputação. Caso
+aconteça algo, nós informe através de email do Service Now, o atendimento
+será realizado o mais rapido possivel. Se for de suma úrgencia, altoridades
+deveram ser acionadas.<br>
+Uma avaliação adicional será cobrada, uma precisa ser entregue para
+provar que o serviço foi realizado com sucesso, sendo assim, o processo mais
+seguro para que o Service Now avalie o serviço feito.
+
+<h2>Taxas e pagamentos:</h2>
+O Service Now trabalha com taxas cobradas através de cada anúncio cadastrado no site, cobrando taxas através de prioridades como:
+  Úrgência, Maxima, Padrão. etc. Cada taxa varia da escolha que o cliente estiver disposto a pagar.
+  No caso de cancelamento de anúncio, o Service Now ira cobrar uma taxa de 5% do valor atual do anúncio, assim devolvendo o restante do dinheiro do anúncio que será retornado para seu perfil assim podendo solicitar o saque. O Service Now nao cobrará taxa por saques, podendo aplicar até dois saques diarios com um prazo de até 2 dias úteis.<br>
+
+<h2>Direitos exclusivos</h2><br>
+Este contrato consiste na prestação de serviços pela contratada ao
+contratante por meio de disponibilidade de espaço em Servidores mantidos em
+conexão com a Internet para alocação do Conteúdo de propriedade do
+contratante. Os serviços possuem diversas configurações, cada qual com
+características próprias, cabendo à contratante identificar o serviço adequado
+para atender às suas necessidades, com base nas opções de serviços disponíveis.
+O contratante obriga-se a realizar os pagamentos relativos a quaisquer custos
+decorrentes de qualquer alteração do serviço contratado. Em caso de alteração
+do serviço escolhido, independente de opção inferior ou superior ao inicialmente
+contratado pelo contratante, a contratada terá um prazo de 48 horas a contar da
+solicitação, independentemente do canal utilizado pelo contratante, para
+proceder à referida alteração em seus sistemas. A contratada , por este
+instrumento, licencia e autoriza em caráter não-exclusivo, intransferível,
+revogável e limitado ao contratante: Acesso ou uso ao Sistema que provê os
+Serviços e acesso ou uso pelo contratante de Aplicativos de Terceiros.
+<h2>Suspensão temporária</h2><br>
+O contratado e o contratante devido às irregularidades que os usuários
+tentarem fazer contra os serviços e contra o site serão suspensos
+temporariamente.<br> Caso aconteça será por causa que o usuário tentou:</p><br>
+<b>1- Violar o contrato</b><br>
+<b>2- Caso o usuário tenha descumprido suas obrigações como de pagamento e
+sobre o serviço realizado.</b><br>
+<b>3-Tentar “enganar” o site de alguma maneira.</b><br>
+<b>4- Caso não tenha feito o serviço no tempo previsto.</b><br>
+Neste período o usuário não poderá realizar nenhum serviço ou contratar
+um serviço devido as circunstância que ocorreram.Caso aconteça mais de uma vez com o mesmo usuário do site ele será
+banido permanentemente ou terá que pagar taxas para continuar utilizando o
+site e os serviços nele.</p> <br>
+<h2>Indenização</h2>
+<p>A contratada e o contratante terão que entrar em contato com os administradores ou com os donos do site caso os serviços maus feitos com má vontade do contratado e do contratante, serviços que nao foram avaliados corretamente e caso haja falha no sistema de pagamento de serviço,ou algum outro erro. Com isso, os administradores responderão em um prazo de 48 horas para fazer uma averiguação completa do que houve. Comprovando nos autos
+que o demandado prestou serviços as autoras, na realização do contrato de compromisso de serviço, deve por isso ser remunerado. 
+  Demonstração específica de justa causa para a rescisão do contrato  de prestação de serviços e comprovado o descumprimento, pela requerida, do prazo de aviso prévio estipulado no instrumento, vai reconhecido o direito da demandante às verbas rescisórias pactuadas entre os litigantes.</p><br>
+  <h2>Limitação/Isenção de Responsabilidade.</h2><br>
+  <p>A Service Now, declara, que para todos fins financeiros, operacionais, de informações pessoais a empresa se responsabiliza por solucionar qualquer tipo de problema ocasionado pela mesma.
+Financeiro: A empresa se responsabiliza pelo repasse do dinheiro depositado pelo contratante. Assim, se o contratante depositar de forma errada, não depositar ou não conter provas o suficiente do depósito, o site não tem parte nos ocorridos. Situações diferentes deverão ser analisados.
+Operacionais: O site não se responsabiliza em caso de má conexão ocasionada pelo provedor do usuário. Em caso de qualquer confirmação/transação, certifique se sua conexão favorece para que as ações ocorram.
+  Informações pessoais: A Service Now tem 100% de responsabilidade em tratar, arquivar e confidenciar as informações dos usuários. Porém, algumas informações contidas nos Termos de Segurança[1] serão expostas para a interação de todos, para que o site entregue o que lhe é de dever.
+  A Service Now não se responsabiliza por ocorridos residenciais. A mesma apenas cuida da parte de negociação e apresentação entre os usuarios, ajudando em algumas partes ao liberar consultas de comentários, rankins e afins.<br>
+
+<h2>Definições.</h2><br>
+<b>“Home”:</b> Página inicial do site, local mestre do site, contendo todos links para as outras partes do site.<br>
+<b>“Login/Logar”:</b> Ato de entrar no site de forma cadastrada na plataforma.<br>
+<b>“Cadastrar”:</b> Registrar informações pessoais  no site de forma validada pelo mesmo.<br>
+<b>“Saiba Mais”:</b> Obtenha informações do serviço, pessoas ou site (Dependendo de onde se localizar).<br>
+<b>“Como Utilizar”:</b> Obtenha informações de utilização do site de forma rápida, prática e direcionada.<br>
+<b>“Ranking de prestadores”:</b> Campo destinado à publicação dos melhores prestadores de serviço. Mecanismo essencial para filtro de pessoas no site.<br>
+<b>“Adquirir serviços”:</b> Ato de aderir a um serviço publicado para que quem o aderiu, o faça.<br>
+<b>“Avaliar serviços”:</b> Ato de avaliar serviço, utilizado para alimentar o Raking de prestadores.<br>
+<b>“Cadastrar Serviços”:</b> Lançar um serviço para que o público o veja e adquira o mesmo. Pode ser instantaneo ou um pouco demorado.<br>
+<b>“Fale Conosco”:</b> Área destinada ao contato com os adms da empresa Service Now. Mecanismo central para melhorias, reclamações e outras coisas.</p><br>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Li e concordo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- modal2 -->
+
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Service Now</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-sm-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+              <button type="button" class="btn1 btn-success btn-x">Contratar</button>
+        <div class="panel-footer">Limpeza de carro<br> Valor R$ 50,00  </div>
+      </div>
+    </div> 
+      </div>
+      <!--- ///// -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+    <div id="pesquisa">
+    <form>
+    <div class="input-group ">
+      <input type="text" class="form-control" size="50" placeholder="Digite aqui" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-primary">Pesquisar</button>
+      </div>
+    </div>
+  </form>
+    </div>
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="600">
+        <li><a href="#prestadores">Ranking Prestadores</a></li>
+         <li><a href="#servicenow">Como Utilizar</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mais Procurados<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#prestadores">Prestadores</a></li>
+            <li><a href="#serviços">Serviços</a></li>
+            </ul>
+            </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Serviços<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#serviços">Domesticos</a></li>
+            <li><a href="#serviços">Empresariais</a></li>
+            <li><a href="#serviços">Automoveis</a></li>
+            <li><a href="#serviços">Jardinagem</a></li>
+            <li><a href="#serviços">Informatica</a></li>
+            <li><a href="#serviços">Outros</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+ 
+<div class="col-sm-8 text-center" id="serviços">  
+<hr>  
+<h1>Serviços</h1>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+              <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Siba Mais</button>
+        <div class="panel-footer">Limpeza de carro<br> Valor R$ 50,00  </div>
+      </div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+               <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Siba Mais</button>
+         <div class="panel-footer">Limpeza de garagem <br> Valor R$ 50,00  </div>
+      </div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                     <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Siba Mais</button>
+          <div class="panel-footer">Limpeza de jardim <br> Valor R$ 100,00  </div>
+      </div>
+    </div>
+     <div class="col-sm-3"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                          <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Siba Mais</button>
+        <div class="panel-footer">Lavagem de forro <br> Valor R$ 100,00  </div>
+      </div>
+    </div>
+  </div>    
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                           <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Siba Mais</button>
+        <div class="panel-footer">Limpeza de banheiro <br> Valor R$ 100,00  </div>
+      </div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                          <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Siba Mais</button>
+<div class="panel-footer">Lavagem de bicicleta <br> Valor R$ 100,00  </div>
+      </div>
+    </div>
+     <div class="col-sm-3"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                            <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Siba Mais</button>
+     <div class="panel-footer">Trocar penel <br> Valor R$ 100,00  </div>
+      </div>
+    </div>
+     <div class="col-sm-3"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                        <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Siba Mais</button>
+       <div class="panel-footer">Passia com cahorro<br> Valor R$ 30,00  </div>
+      </div>
+    </div>
+     <div class="col-sm-3"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                           <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Siba Mais</button>
+       <div class="panel-footer">Cordas de violão <br> Valor R$ 20,00  </div>
+      </div>
+    </div>
+     <div class="col-sm-3"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                       <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Siba Mais</button>
+        <div class="panel-footer">Baba de criança <br> Valor R$ 100,00  </div>
+      </div>
+    </div>
+     <div class="col-sm-3"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                        <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Siba Mais</button>
+        <div class="panel-footer">Limpeza de calha <br> Valor R$ 80,00  </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Disponivel</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image" data-dismiss="modal"></div>
+                       <button type="button" class="btn1 btn-success btn-sm">Contratar</button><button type="button" class="btn2 btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2">Siba Mais</button>
+       <div class="panel-footer">Carregar caminhão <br> Valor R$ 200,00  </div>
+      </div>
+    </div>
+  </div>
+<br><br>
+<hr>
+<div class="row" id="servicenow">
+<div class="container-fluid">
+<h1>Service Now é </h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p>
+</div>
+</div>
+<hr>
+<div class="row">
+<h1>Como utilizar</h1>
+    <div class="col-sm-6">
+      <video autoplay muted loop id="myVideo" width="350">
+  <source src="Imagens/rain.mp4" type="video/mp4" >
+</video>
+    </div>
+    <div class="col-sm-6">
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+<hr>
+<div class="row" id="prestadores">
+<h1>Ranking de Prestadores</h1>
+<ul class="nav nav-pills nav-stacked">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Qualificar por<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section41">Domenticos</a></li>
+            <li><a href="#section42">Empresariais</a></li>
+            <li><a href="#section41">Automoveis</a></li>
+            <li><a href="#section42">Jardim</a></li>
+            <li><a href="#section41">Limpeza</a></li>
+            <li><a href="#section42">Tecnologia/Informatica</a></li>
+            <li><a href="#section41">Outros</a></li>
+            </ul>
+            </li>
+            </ul>
+            <br>
+
+<div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Posição</th>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Serviços prestados</th>
+        <th>Cidade</th>
+        <th>Media em Avaliaçoes</th>
+        <th>Qualificação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Marcos</td>
+        <td>25</td>
+        <td>250</td>
+        <td>Uberaba</td>
+        <td>10</td>
+        <td>Jardineiro(a)</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Marcia</td>
+        <td>20</td>
+        <td>240</td>
+        <td>Uberlandia</td>
+        <td>10</td>
+        <td>Jardineiro(a)</td>
+        </tr>
+        <tr>
+        <td>3</td>
+        <td>Alex</td>
+        <td>18</td>
+        <td>100</td>
+        <td>Uberaba</td>
+        <td>10</td>
+        <td>Jardineiro(a)</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Flávia</td>
+        <td>30</td>
+        <td>100</td>
+        <td>Uberaba</td>
+        <td>9.8</td>
+        <td>Jardineiro(a)</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Maria</td>
+        <td>25</td>
+        <td>250</td>
+        <td>Indianopolis</td>
+        <td>9.5</td>
+        <td>Jardineiro(a)</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Marcos</td>
+        <td>18</td>
+        <td>100</td>
+        <td>Araguari</td>
+        <td>9.5</td>
+        <td>Jardineiro(a)</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Marcela</td>
+        <td>25</td>
+        <td>250</td>
+        <td>Araguari</td>
+        <td>9.5</td>
+        <td>Jardineiro(a)</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Valentim</td>
+        <td>35</td>
+        <td>130</td>
+        <td>Uberlandia</td>
+        <td>9.3</td>
+        <td>Jardineiro(a)</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Fabricio</td>
+        <td>25</td>
+        <td>100</td>
+        <td>Araguari</td>
+        <td>9.0</td>
+        <td>Jardineiro(a)</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>João</td>
+        <td>40</td>
+        <td>200</td>
+        <td>Uberaba</td>
+        <td>8.0</td>
+        <td>Jardineiro(a)</td>
+      </tr>
+
+      
+    </tbody>
+  </table>
+  </div>
+  <ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a>...</a></li>
+    <li><a href="#">200</a></li>
+  </ul>
+</div>
+
+
+    </div>
+
+    </div>
+    </div>
+
+
+    
+<div class="jumbotron text-center" style="margin-bottom: 0; margin-top: 10%; background-color: #333; color: #fff";>
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-google"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+</div>
+
+<script type="text/javascript">
+$(function(){ 
+var cor = "panel panel-success";  
+var animacao = "animated flip";
+var fimanimacao = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+$(".btn1").click(function(e){ 
+
+$(this).parent().children(":first").html("Em execução");
+$(this).parent().addClass(cor);
+$(this).parent().addClass(animacao).one(fimanimacao, function(){
+$(this).parent().removeClass(animacao);
+});
+e.preventDefault();
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
